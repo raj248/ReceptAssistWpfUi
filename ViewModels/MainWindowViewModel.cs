@@ -38,8 +38,15 @@ public partial class MainWindowViewModel : ObservableObject
             new NavigationItem()
             {
                 Content = "Home",
-                PageTag = "dashboard",
+                PageTag = "home",
                 Icon = SymbolRegular.Home24,
+                PageType = typeof(Views.Pages.HomePage)
+            },
+            new NavigationItem()
+            {
+                Content = "Dashboard",
+                PageTag = "dashboard",
+                Icon = SymbolRegular.DataHistogram24,
                 PageType = typeof(Views.Pages.DashboardPage)
             },
             new NavigationItem()

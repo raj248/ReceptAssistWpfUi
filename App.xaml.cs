@@ -46,6 +46,8 @@ public partial class App
             services.AddScoped<ViewModels.MainWindowViewModel>();
 
             // Views and ViewModels
+            services.AddScoped<Views.Pages.HomePage>();
+            services.AddScoped<ViewModels.HomeViewModel>();
             services.AddScoped<Views.Pages.DashboardPage>();
             services.AddScoped<ViewModels.DashboardViewModel>();
             services.AddScoped<Views.Pages.DataPage>();
